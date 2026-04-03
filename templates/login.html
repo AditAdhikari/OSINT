@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login | BreachCheck</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    
+    <div class="auth-container">
+        <div class="auth-info-panel">
+            <h3>🔐 Security Briefing</h3>
+            <p>To protect the integrity of our threat intelligence database, access is restricted to authorized users.</p>
+            <ul class="info-list">
+                <li><strong>Session Security:</strong> Your session is encrypted using industry-standard AES-256 signatures.</li>
+                <li><strong>Privacy First:</strong> We do not track your individual searches back to your identity.</li>
+                <li><strong>Zero Knowledge:</strong> We store only salted hashes, never your actual password.</li>
+            </ul>
+        </div>
+
+        <div class="auth-card">
+            <h2>Access Terminal</h2>
+            <p>Verify your identity to proceed.</p>
+
+            {% with messages = get_flashed_messages() %}
+              {% if messages %}
+                <div class="flash-messages">
+                  {% for message in messages %}
+                    <div class="flash-msg">{{ message }}</div>
+                  {% endfor %}
+                </div>
+              {% endif %}
+            {% endwith %}
+
+            <form method="POST" class="auth-form">
+                <div class="form-group">
+                    <label>IDENTIFIER</label>
+                    <input type="text" name="username" class="auth-input" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <label>PASSKEY</label>
+                    <input type="password" name="password" class="auth-input" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="auth-btn">VERIFY & ENTER</button>
+            </form>
+
+            <div class="auth-footer">
+                New researcher? <a href="/register">Create Identity</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

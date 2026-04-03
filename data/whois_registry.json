@@ -1,0 +1,1993 @@
+{
+    "google.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1997-09-15",
+        "expires": "2028-09-14",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.google.com",
+            "ns2.google.com"
+        ],
+        "owner": "Google LLC"
+    },
+    "microsoft.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1991-05-02",
+        "expires": "2030-05-03",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.msft.net"
+        ],
+        "owner": "Microsoft Corporation"
+    },
+    "apple.com": {
+        "registrar": "CSC Corporate Domains",
+        "created": "1987-02-19",
+        "expires": "2027-02-20",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "adns1.apple.com"
+        ],
+        "owner": "Apple Inc."
+    },
+    "amazon.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1994-11-01",
+        "expires": "2029-10-31",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "pdns1.ultradns.net"
+        ],
+        "owner": "Amazon.com, Inc."
+    },
+    "netflix.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "2002-11-10",
+        "expires": "2026-11-09",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns-110.awsdns-13.com"
+        ],
+        "owner": "Netflix, Inc."
+    },
+    "secure-login-verify.net": {
+        "registrar": "NameCheap",
+        "created": "2026-03-01",
+        "expires": "2027-03-01",
+        "status": "⚠️ SUSPICIOUS / PHISHING",
+        "nameservers": [
+            "ns1.anonymous.com"
+        ],
+        "owner": "Privacy Protect"
+    },
+    "update-account-info.xyz": {
+        "registrar": "Hostinger",
+        "created": "2026-03-15",
+        "expires": "2027-03-15",
+        "status": "⚠️ MALICIOUS / TRAP",
+        "nameservers": [
+            "ns1.parking.com"
+        ],
+        "owner": "Unknown"
+    },
+    "github.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "2007-10-09",
+        "expires": "2026-10-09",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns-421.awsdns-52.com"
+        ],
+        "owner": "GitHub, Inc."
+    },
+    "stackoverflow.com": {
+        "registrar": "Name.com",
+        "created": "2003-12-26",
+        "expires": "2028-12-26",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns-cloud-e1.googledomains.com"
+        ],
+        "owner": "Stack Exchange Inc."
+    },
+    "wikipedia.org": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "2001-01-13",
+        "expires": "2027-01-13",
+        "status": "Educational / Safe",
+        "nameservers": [
+            "ns0.wikimedia.org"
+        ],
+        "owner": "Wikimedia Foundation"
+    },
+    "python.org": {
+        "registrar": "Gandi SAS",
+        "created": "1995-03-27",
+        "expires": "2029-03-27",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.p19.dynect.net"
+        ],
+        "owner": "Python Software Foundation"
+    },
+    "kali.org": {
+        "registrar": "Gandi SAS",
+        "created": "2013-01-11",
+        "expires": "2027-01-11",
+        "status": "Security / Safe",
+        "nameservers": [
+            "ns1.kali.org"
+        ],
+        "owner": "Offensive Security"
+    },
+    "metasploit.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "2003-10-14",
+        "expires": "2026-10-14",
+        "status": "Security / Safe",
+        "nameservers": [
+            "ns1.rapid7.com"
+        ],
+        "owner": "Rapid7 LLC"
+    },
+    "owasp.org": {
+        "registrar": "Contact Privacy Inc.",
+        "created": "2003-11-12",
+        "expires": "2027-11-12",
+        "status": "Security / Safe",
+        "nameservers": [
+            "ns1.hover.com"
+        ],
+        "owner": "OWASP Foundation"
+    },
+    "fbi.gov": {
+        "registrar": "DotGov Registrar",
+        "created": "1995-01-01",
+        "expires": "2030-01-01",
+        "status": "Government / Safe",
+        "nameservers": [
+            "a.gov-ns.com"
+        ],
+        "owner": "Federal Bureau of Investigation"
+    },
+    "cia.gov": {
+        "registrar": "DotGov Registrar",
+        "created": "1995-01-01",
+        "expires": "2030-01-01",
+        "status": "Government / Safe",
+        "nameservers": [
+            "ns1.cia.gov"
+        ],
+        "owner": "Central Intelligence Agency"
+    },
+    "nasa.gov": {
+        "registrar": "DotGov Registrar",
+        "created": "1995-01-01",
+        "expires": "2030-01-01",
+        "status": "Government / Safe",
+        "nameservers": [
+            "ns1.nasa.gov"
+        ],
+        "owner": "National Aeronautics and Space Admin"
+    },
+    "harvard.edu": {
+        "registrar": "Educause",
+        "created": "1985-07-01",
+        "expires": "2030-07-01",
+        "status": "Educational / Safe",
+        "nameservers": [
+            "nic.harvard.edu"
+        ],
+        "owner": "Harvard University"
+    },
+    "mit.edu": {
+        "registrar": "Educause",
+        "created": "1985-05-23",
+        "expires": "2030-05-23",
+        "status": "Educational / Safe",
+        "nameservers": [
+            "bitsy.mit.edu"
+        ],
+        "owner": "Massachusetts Institute of Tech"
+    },
+    "stanford.edu": {
+        "registrar": "Educause",
+        "created": "1985-11-05",
+        "expires": "2030-11-05",
+        "status": "Educational / Safe",
+        "nameservers": [
+            "argus.stanford.edu"
+        ],
+        "owner": "Stanford University"
+    },
+    "free-crypto-giveaway.io": {
+        "registrar": "NameSilo",
+        "created": "2026-03-20",
+        "expires": "2027-03-20",
+        "status": "⚠️ SCAM / PHISHING",
+        "nameservers": [
+            "ns1.scamdns.com"
+        ],
+        "owner": "Private Person"
+    },
+    "bank-of-america-verify.com": {
+        "registrar": "PublicDomainRegistry",
+        "created": "2026-04-01",
+        "expires": "2027-04-01",
+        "status": "⚠️ CRITICAL / PHISHING",
+        "nameservers": [
+            "ns1.attacker.com"
+        ],
+        "owner": "Redacted"
+    },
+    "paypal-support-desk.com": {
+        "registrar": "GoDaddy",
+        "created": "2026-02-12",
+        "expires": "2027-02-12",
+        "status": "⚠️ SUSPICIOUS",
+        "nameservers": [
+            "ns43.domaincontrol.com"
+        ],
+        "owner": "Redacted"
+    },
+    "discord-nitro-gift.com": {
+        "registrar": "NameCheap",
+        "created": "2026-03-25",
+        "expires": "2027-03-25",
+        "status": "⚠️ MALICIOUS",
+        "nameservers": [
+            "ns1.free-gifts.io"
+        ],
+        "owner": "Private"
+    },
+    "steam-community-trade.net": {
+        "registrar": "Hostinger",
+        "created": "2026-04-02",
+        "expires": "2027-04-02",
+        "status": "⚠️ PHISHING / SCAM",
+        "nameservers": [
+            "ns2.steam-fake.net"
+        ],
+        "owner": "Private"
+    },
+    "adobe-photoshop-free.com": {
+        "registrar": "Porkbun",
+        "created": "2026-01-05",
+        "expires": "2027-01-05",
+        "status": "⚠️ MALWARE RISK",
+        "nameservers": [
+            "ns1.warez.com"
+        ],
+        "owner": "Unknown"
+    },
+    "kali-linux-download.net": {
+        "registrar": "NameCheap",
+        "created": "2026-03-30",
+        "expires": "2027-03-30",
+        "status": "⚠️ FAKE DOWNLOAD SITE",
+        "nameservers": [
+            "ns1.fake-iso.net"
+        ],
+        "owner": "Private"
+    },
+    "twitter-blue-verify.com": {
+        "registrar": "Cloudflare",
+        "created": "2026-04-01",
+        "expires": "2027-04-01",
+        "status": "⚠️ PHISHING",
+        "nameservers": [
+            "ns1.cf-fake.com"
+        ],
+        "owner": "Private"
+    },
+    "facebook-meta-business.net": {
+        "registrar": "GoDaddy",
+        "created": "2026-02-28",
+        "expires": "2027-02-28",
+        "status": "⚠️ SCAM",
+        "nameservers": [
+            "ns1.meta-scam.com"
+        ],
+        "owner": "Unknown"
+    },
+    "instagram-help-center.biz": {
+        "registrar": "NameSilo",
+        "created": "2026-03-10",
+        "expires": "2027-03-10",
+        "status": "⚠️ ACCOUNT THEFT RISK",
+        "nameservers": [
+            "ns1.ig-help.io"
+        ],
+        "owner": "Private"
+    },
+    "whatsapp-web-login.com": {
+        "registrar": "Hostinger",
+        "created": "2026-04-01",
+        "expires": "2027-04-01",
+        "status": "⚠️ MALICIOUS QR CODE",
+        "nameservers": [
+            "ns1.wa-fake.com"
+        ],
+        "owner": "Redacted"
+    },
+    "zoom-meeting-join.us": {
+        "registrar": "NameCheap",
+        "created": "2026-03-22",
+        "expires": "2027-03-22",
+        "status": "⚠️ SUSPICIOUS",
+        "nameservers": [
+            "ns1.zoom-fake.us"
+        ],
+        "owner": "Private"
+    },
+    "microsoft-office-365.online": {
+        "registrar": "GoDaddy",
+        "created": "2026-01-20",
+        "expires": "2027-01-20",
+        "status": "⚠️ PHISHING",
+        "nameservers": [
+            "ns1.office-fake.online"
+        ],
+        "owner": "Redacted"
+    },
+    "netflix-billing-update.com": {
+        "registrar": "Porkbun",
+        "created": "2026-03-05",
+        "expires": "2027-03-05",
+        "status": "⚠️ FINANCIAL SCAM",
+        "nameservers": [
+            "ns1.nf-billing.com"
+        ],
+        "owner": "Private"
+    },
+    "amazon-prime-delivery.net": {
+        "registrar": "NameSilo",
+        "created": "2026-02-15",
+        "expires": "2027-02-15",
+        "status": "⚠️ PACKAGE SCAM",
+        "nameservers": [
+            "ns1.amz-scam.net"
+        ],
+        "owner": "Unknown"
+    },
+    "apple-id-security.com": {
+        "registrar": "NameCheap",
+        "created": "2026-03-18",
+        "expires": "2027-03-18",
+        "status": "⚠️ CREDENTIAL THEFT",
+        "nameservers": [
+            "ns1.apple-fake.com"
+        ],
+        "owner": "Private"
+    },
+    "binance-staking-bonus.com": {
+        "registrar": "Hostinger",
+        "created": "2026-04-01",
+        "expires": "2027-04-01",
+        "status": "⚠️ CRYPTO SCAM",
+        "nameservers": [
+            "ns1.bn-scam.com"
+        ],
+        "owner": "Redacted"
+    },
+    "metamask-wallet-seed.io": {
+        "registrar": "NameSilo",
+        "created": "2026-03-28",
+        "expires": "2027-03-28",
+        "status": "⚠️ SEED PHRASE THEFT",
+        "nameservers": [
+            "ns1.mm-scam.io"
+        ],
+        "owner": "Unknown"
+    },
+    "trust-wallet-auth.com": {
+        "registrar": "GoDaddy",
+        "created": "2026-02-10",
+        "expires": "2027-02-10",
+        "status": "⚠️ PHISHING",
+        "nameservers": [
+            "ns1.tw-scam.com"
+        ],
+        "owner": "Private"
+    },
+    "ledger-live-update.com": {
+        "registrar": "Porkbun",
+        "created": "2026-03-30",
+        "expires": "2027-03-30",
+        "status": "⚠️ MALWARE",
+        "nameservers": [
+            "ns1.ledger-fake.com"
+        ],
+        "owner": "Redacted"
+    },
+    "coinbase-support-ticket.net": {
+        "registrar": "NameCheap",
+        "created": "2026-01-15",
+        "expires": "2027-01-15",
+        "status": "⚠️ SCAM",
+        "nameservers": [
+            "ns1.cb-support.net"
+        ],
+        "owner": "Private"
+    },
+    "blockchain-info-verify.com": {
+        "registrar": "Hostinger",
+        "created": "2026-03-22",
+        "expires": "2027-03-22",
+        "status": "⚠️ SUSPICIOUS",
+        "nameservers": [
+            "ns1.bc-fake.com"
+        ],
+        "owner": "Unknown"
+    },
+    "kraken-exchange-login.com": {
+        "registrar": "GoDaddy",
+        "created": "2026-04-01",
+        "expires": "2027-04-01",
+        "status": "⚠️ PHISHING",
+        "nameservers": [
+            "ns1.kr-fake.com"
+        ],
+        "owner": "Redacted"
+    },
+    "kucoin-bonus-claim.com": {
+        "registrar": "NameSilo",
+        "created": "2026-02-25",
+        "expires": "2027-02-25",
+        "status": "⚠️ CRYPTO SCAM",
+        "nameservers": [
+            "ns1.kc-scam.com"
+        ],
+        "owner": "Private"
+    },
+    "bitmex-trading-bot.io": {
+        "registrar": "NameCheap",
+        "created": "2026-03-12",
+        "expires": "2027-03-12",
+        "status": "⚠️ MALICIOUS BOT",
+        "nameservers": [
+            "ns1.bm-fake.io"
+        ],
+        "owner": "Unknown"
+    },
+    "bybit-rewards-center.com": {
+        "registrar": "Porkbun",
+        "created": "2026-01-30",
+        "expires": "2027-01-30",
+        "status": "⚠️ SCAM",
+        "nameservers": [
+            "ns1.bb-scam.com"
+        ],
+        "owner": "Redacted"
+    },
+    "okx-verify-account.com": {
+        "registrar": "Hostinger",
+        "created": "2026-04-01",
+        "expires": "2027-04-01",
+        "status": "⚠️ PHISHING",
+        "nameservers": [
+            "ns1.ok-fake.com"
+        ],
+        "owner": "Private"
+    },
+    "gemini-security-check.com": {
+        "registrar": "GoDaddy",
+        "created": "2026-03-15",
+        "expires": "2027-03-15",
+        "status": "⚠️ SUSPICIOUS",
+        "nameservers": [
+            "ns1.gm-fake.com"
+        ],
+        "owner": "Unknown"
+    },
+    "bitstamp-support.net": {
+        "registrar": "NameSilo",
+        "created": "2026-02-05",
+        "expires": "2027-02-05",
+        "status": "⚠️ SCAM",
+        "nameservers": [
+            "ns1.bs-fake.net"
+        ],
+        "owner": "Redacted"
+    },
+    "paxful-giftcard-trade.com": {
+        "registrar": "NameCheap",
+        "created": "2026-03-20",
+        "expires": "2027-03-20",
+        "status": "⚠️ SCAM / FRAUD",
+        "nameservers": [
+            "ns1.pf-fake.com"
+        ],
+        "owner": "Private"
+    },
+    "cnn.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1993-09-22",
+        "expires": "2028-09-22",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns-1.awsdns-01.com"
+        ],
+        "owner": "Warner Bros. Discovery"
+    },
+    "nytimes.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1994-01-18",
+        "expires": "2029-01-18",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.nytimes.com"
+        ],
+        "owner": "The New York Times Company"
+    },
+    "bbc.co.uk": {
+        "registrar": "Nominet",
+        "created": "1996-08-01",
+        "expires": "2030-08-01",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.bbc.co.uk"
+        ],
+        "owner": "British Broadcasting Corp"
+    },
+    "reuters.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-03-20",
+        "expires": "2027-03-20",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.reuters.com"
+        ],
+        "owner": "Thomson Reuters"
+    },
+    "bloomberg.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1993-09-29",
+        "expires": "2028-09-29",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.bloomberg.com"
+        ],
+        "owner": "Bloomberg L.P."
+    },
+    "forbes.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1993-11-03",
+        "expires": "2027-11-03",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.forbes.com"
+        ],
+        "owner": "Forbes Media"
+    },
+    "wsj.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1994-11-08",
+        "expires": "2026-11-08",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.wsj.com"
+        ],
+        "owner": "Dow Jones & Company"
+    },
+    "theguardian.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1999-05-14",
+        "expires": "2029-05-14",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.theguardian.com"
+        ],
+        "owner": "Guardian Media Group"
+    },
+    "foxnews.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-03-10",
+        "expires": "2027-03-10",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.foxnews.com"
+        ],
+        "owner": "Fox Corporation"
+    },
+    "aljazeera.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1996-11-01",
+        "expires": "2028-11-01",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.aljazeera.net"
+        ],
+        "owner": "Al Jazeera Media Network"
+    },
+    "reddit.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "2005-04-29",
+        "expires": "2027-04-29",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.reddit.com"
+        ],
+        "owner": "Reddit Inc."
+    },
+    "twitter.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "2000-01-21",
+        "expires": "2026-01-21",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.twitter.com"
+        ],
+        "owner": "X Corp."
+    },
+    "instagram.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "2004-06-04",
+        "expires": "2027-06-04",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.instagram.com"
+        ],
+        "owner": "Meta Platforms, Inc."
+    },
+    "facebook.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1997-03-29",
+        "expires": "2028-03-29",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "a.ns.facebook.com"
+        ],
+        "owner": "Meta Platforms, Inc."
+    },
+    "linkedin.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "2002-11-02",
+        "expires": "2027-11-02",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.linkedin.com"
+        ],
+        "owner": "Microsoft Corporation"
+    },
+    "tiktok.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1996-05-23",
+        "expires": "2028-05-23",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.tiktok.com"
+        ],
+        "owner": "ByteDance Ltd."
+    },
+    "snapchat.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "2011-05-26",
+        "expires": "2027-05-26",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.snapchat.com"
+        ],
+        "owner": "Snap Inc."
+    },
+    "pinterest.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "2009-11-26",
+        "expires": "2027-11-26",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.pinterest.com"
+        ],
+        "owner": "Pinterest Inc."
+    },
+    "tumblr.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "2007-02-05",
+        "expires": "2026-02-05",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.tumblr.com"
+        ],
+        "owner": "Automattic Inc."
+    },
+    "twitch.tv": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "2011-05-23",
+        "expires": "2026-05-23",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.twitch.tv"
+        ],
+        "owner": "Amazon.com, Inc."
+    },
+    "ebay.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-08-04",
+        "expires": "2027-08-04",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.ebay.com"
+        ],
+        "owner": "eBay Inc."
+    },
+    "walmart.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-08-11",
+        "expires": "2028-08-11",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.walmart.com"
+        ],
+        "owner": "Walmart Inc."
+    },
+    "target.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-10-18",
+        "expires": "2027-10-18",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.target.com"
+        ],
+        "owner": "Target Corporation"
+    },
+    "bestbuy.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-12-14",
+        "expires": "2026-12-14",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.bestbuy.com"
+        ],
+        "owner": "Best Buy Co., Inc."
+    },
+    "homedepot.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-26",
+        "expires": "2027-01-26",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.homedepot.com"
+        ],
+        "owner": "Home Depot Product Authority"
+    },
+    "nike.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1994-08-22",
+        "expires": "2028-08-22",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.nike.com"
+        ],
+        "owner": "Nike, Inc."
+    },
+    "adidas.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1994-02-28",
+        "expires": "2027-02-28",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.adidas.com"
+        ],
+        "owner": "Adidas AG"
+    },
+    "starbucks.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1994-05-23",
+        "expires": "2026-05-23",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.starbucks.com"
+        ],
+        "owner": "Starbucks Corporation"
+    },
+    "mcdonalds.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1994-07-26",
+        "expires": "2028-07-26",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.mcdonalds.com"
+        ],
+        "owner": "McDonald's Corporation"
+    },
+    "coca-cola.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-02-22",
+        "expires": "2027-02-22",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.coca-cola.com"
+        ],
+        "owner": "The Coca-Cola Company"
+    },
+    "tesla.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "2002-11-04",
+        "expires": "2027-11-04",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.tesla.com"
+        ],
+        "owner": "Tesla, Inc."
+    },
+    "spacex.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "2002-05-15",
+        "expires": "2028-05-15",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.spacex.com"
+        ],
+        "owner": "Space Exploration Tech"
+    },
+    "ford.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.ford.com"
+        ],
+        "owner": "Ford Motor Company"
+    },
+    "toyota.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-05-18",
+        "expires": "2028-05-18",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.toyota.com"
+        ],
+        "owner": "Toyota Motor Sales, U.S.A."
+    },
+    "honda.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-02-23",
+        "expires": "2026-02-23",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.honda.com"
+        ],
+        "owner": "American Honda Motor Co."
+    },
+    "bmw.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-06-28",
+        "expires": "2027-06-28",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.bmw.com"
+        ],
+        "owner": "Bayerische Motoren Werke AG"
+    },
+    "mercedes-benz.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-09-07",
+        "expires": "2028-09-07",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.mercedes-benz.com"
+        ],
+        "owner": "Mercedes-Benz Group AG"
+    },
+    "audi.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-08-21",
+        "expires": "2027-08-21",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.audi.com"
+        ],
+        "owner": "Audi AG"
+    },
+    "volkswagen.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-10-24",
+        "expires": "2026-10-24",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.volkswagen.com"
+        ],
+        "owner": "Volkswagen AG"
+    },
+    "ferrari.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-11-20",
+        "expires": "2028-11-20",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.ferrari.com"
+        ],
+        "owner": "Ferrari S.p.A."
+    },
+    "disney.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1990-03-21",
+        "expires": "2029-03-21",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.disney.com"
+        ],
+        "owner": "The Walt Disney Company"
+    },
+    "pixar.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-10-06",
+        "expires": "2027-10-06",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.pixar.com"
+        ],
+        "owner": "Pixar Animation Studios"
+    },
+    "marvel.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1994-08-16",
+        "expires": "2028-08-16",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.marvel.com"
+        ],
+        "owner": "Marvel Characters, Inc."
+    },
+    "starwars.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-07-28",
+        "expires": "2027-07-28",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.starwars.com"
+        ],
+        "owner": "Lucasfilm Ltd."
+    },
+    "dc.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.dc.com"
+        ],
+        "owner": "DC Comics"
+    },
+    "lego.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-03-22",
+        "expires": "2027-03-22",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.lego.com"
+        ],
+        "owner": "LEGO System A/S"
+    },
+    "nintendo.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-12-07",
+        "expires": "2026-12-07",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.nintendo.com"
+        ],
+        "owner": "Nintendo of America Inc."
+    },
+    "playstation.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-11-06",
+        "expires": "2028-11-06",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.playstation.com"
+        ],
+        "owner": "Sony Interactive Ent."
+    },
+    "xbox.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-12-14",
+        "expires": "2027-12-14",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.xbox.com"
+        ],
+        "owner": "Microsoft Corporation"
+    },
+    "ubisoft.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-05-18",
+        "expires": "2028-05-18",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.ubisoft.com"
+        ],
+        "owner": "Ubisoft Entertainment"
+    },
+    "ea.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1992-05-12",
+        "expires": "2027-05-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.ea.com"
+        ],
+        "owner": "Electronic Arts Inc."
+    },
+    "activision.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-11",
+        "expires": "2028-01-11",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.activision.com"
+        ],
+        "owner": "Activision Publishing"
+    },
+    "rockstargames.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1998-11-02",
+        "expires": "2027-11-02",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.rockstargames.com"
+        ],
+        "owner": "Take-Two Interactive"
+    },
+    "epicgames.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-06-22",
+        "expires": "2028-06-22",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.epicgames.com"
+        ],
+        "owner": "Epic Games, Inc."
+    },
+    "steam.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.steam.com"
+        ],
+        "owner": "Valve Corporation"
+    },
+    "blizzard.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.blizzard.com"
+        ],
+        "owner": "Blizzard Entertainment"
+    },
+    "roblox.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "2003-12-02",
+        "expires": "2027-12-02",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.roblox.com"
+        ],
+        "owner": "Roblox Corporation"
+    },
+    "minecraft.net": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "2009-01-16",
+        "expires": "2028-01-16",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.minecraft.net"
+        ],
+        "owner": "Mojang Synergies AB"
+    },
+    "leagueoflegends.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "2008-04-18",
+        "expires": "2027-04-18",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.riotgames.com"
+        ],
+        "owner": "Riot Games, Inc."
+    },
+    "fortnite.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "2011-07-22",
+        "expires": "2028-07-22",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.epicgames.com"
+        ],
+        "owner": "Epic Games, Inc."
+    },
+    "valvesoftware.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1996-08-24",
+        "expires": "2027-08-24",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.valvesoftware.com"
+        ],
+        "owner": "Valve Corporation"
+    },
+    "visa.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1994-06-27",
+        "expires": "2029-06-27",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.visa.com"
+        ],
+        "owner": "Visa International"
+    },
+    "mastercard.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1994-09-12",
+        "expires": "2028-09-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.mastercard.com"
+        ],
+        "owner": "Mastercard International"
+    },
+    "americanexpress.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-03-29",
+        "expires": "2027-03-29",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.americanexpress.com"
+        ],
+        "owner": "American Express Company"
+    },
+    "paypal.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1999-07-15",
+        "expires": "2028-07-15",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.paypal.com"
+        ],
+        "owner": "PayPal, Inc."
+    },
+    "chase.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.chase.com"
+        ],
+        "owner": "JPMorgan Chase Bank"
+    },
+    "hsbc.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-06-08",
+        "expires": "2028-06-08",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.hsbc.com"
+        ],
+        "owner": "HSBC Holdings plc"
+    },
+    "citi.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.citi.com"
+        ],
+        "owner": "Citigroup Inc."
+    },
+    "barclays.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-10-18",
+        "expires": "2028-10-18",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.barclays.com"
+        ],
+        "owner": "Barclays Bank PLC"
+    },
+    "standardchartered.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-09-15",
+        "expires": "2027-09-15",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.sc.com"
+        ],
+        "owner": "Standard Chartered PLC"
+    },
+    "goldmansachs.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.gs.com"
+        ],
+        "owner": "Goldman Sachs Group"
+    },
+    "morganstanley.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.ms.com"
+        ],
+        "owner": "Morgan Stanley"
+    },
+    "ubs.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.ubs.com"
+        ],
+        "owner": "UBS AG"
+    },
+    "credit-suisse.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.credit-suisse.com"
+        ],
+        "owner": "Credit Suisse Group"
+    },
+    "deutsche-bank.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.db.com"
+        ],
+        "owner": "Deutsche Bank AG"
+    },
+    "societegenerale.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.socgen.com"
+        ],
+        "owner": "Societe Generale"
+    },
+    "bnpparibas.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.bnpparibas.com"
+        ],
+        "owner": "BNP Paribas"
+    },
+    "santander.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.santander.com"
+        ],
+        "owner": "Banco Santander, S.A."
+    },
+    "bbva.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.bbva.com"
+        ],
+        "owner": "Banco Bilbao Vizcaya Argentaria"
+    },
+    "unicef.org": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "International / Safe",
+        "nameservers": [
+            "ns1.unicef.org"
+        ],
+        "owner": "UNICEF"
+    },
+    "who.int": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "International / Safe",
+        "nameservers": [
+            "ns1.who.int"
+        ],
+        "owner": "World Health Organization"
+    },
+    "unesco.org": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "International / Safe",
+        "nameservers": [
+            "ns1.unesco.org"
+        ],
+        "owner": "UNESCO"
+    },
+    "un.org": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "International / Safe",
+        "nameservers": [
+            "ns1.un.org"
+        ],
+        "owner": "United Nations"
+    },
+    "redcross.org": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Non-Profit / Safe",
+        "nameservers": [
+            "ns1.redcross.org"
+        ],
+        "owner": "American Red Cross"
+    },
+    "greenpeace.org": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "Non-Profit / Safe",
+        "nameservers": [
+            "ns1.greenpeace.org"
+        ],
+        "owner": "Greenpeace International"
+    },
+    "amnesty.org": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Non-Profit / Safe",
+        "nameservers": [
+            "ns1.amnesty.org"
+        ],
+        "owner": "Amnesty International"
+    },
+    "worldbank.org": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "International / Safe",
+        "nameservers": [
+            "ns1.worldbank.org"
+        ],
+        "owner": "World Bank Group"
+    },
+    "imf.org": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "International / Safe",
+        "nameservers": [
+            "ns1.imf.org"
+        ],
+        "owner": "International Monetary Fund"
+    },
+    "wto.org": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "International / Safe",
+        "nameservers": [
+            "ns1.wto.org"
+        ],
+        "owner": "World Trade Organization"
+    },
+    "oecd.org": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "International / Safe",
+        "nameservers": [
+            "ns1.oecd.org"
+        ],
+        "owner": "OECD"
+    },
+    "nato.int": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "International / Safe",
+        "nameservers": [
+            "ns1.nato.int"
+        ],
+        "owner": "NATO"
+    },
+    "europa.eu": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "International / Safe",
+        "nameservers": [
+            "ns1.europa.eu"
+        ],
+        "owner": "European Union"
+    },
+    "interpol.int": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "International / Safe",
+        "nameservers": [
+            "ns1.interpol.int"
+        ],
+        "owner": "INTERPOL"
+    },
+    "olympics.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "International / Safe",
+        "nameservers": [
+            "ns1.olympics.com"
+        ],
+        "owner": "International Olympic Committee"
+    },
+    "fifa.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "International / Safe",
+        "nameservers": [
+            "ns1.fifa.com"
+        ],
+        "owner": "FIFA"
+    },
+    "nba.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.nba.com"
+        ],
+        "owner": "NBA Properties, Inc."
+    },
+    "nfl.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.nfl.com"
+        ],
+        "owner": "National Football League"
+    },
+    "mlb.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.mlb.com"
+        ],
+        "owner": "Major League Baseball"
+    },
+    "nhl.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.nhl.com"
+        ],
+        "owner": "National Hockey League"
+    },
+    "wimbledon.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.wimbledon.com"
+        ],
+        "owner": "AELTC"
+    },
+    "rolandgarros.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.rolandgarros.com"
+        ],
+        "owner": "FFT"
+    },
+    "usopen.org": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.usopen.org"
+        ],
+        "owner": "USTA"
+    },
+    "ausopen.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.ausopen.com"
+        ],
+        "owner": "Tennis Australia"
+    },
+    "f1.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.f1.com"
+        ],
+        "owner": "Formula One Management"
+    },
+    "motogp.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.motogp.com"
+        ],
+        "owner": "Dorna Sports"
+    },
+    "tourdefrance.fr": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.letour.fr"
+        ],
+        "owner": "A.S.O."
+    },
+    "wwe.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.wwe.com"
+        ],
+        "owner": "World Wrestling Entertainment"
+    },
+    "ufc.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.ufc.com"
+        ],
+        "owner": "Zuffa, LLC"
+    },
+    "espn.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.espn.com"
+        ],
+        "owner": "ESPN Inc."
+    },
+    "skysports.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.skysports.com"
+        ],
+        "owner": "Sky Group"
+    },
+    "bleacherreport.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.bleacherreport.com"
+        ],
+        "owner": "Turner Broadcasting"
+    },
+    "cbssports.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.cbssports.com"
+        ],
+        "owner": "CBS Interactive"
+    },
+    "nbcsports.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.nbcsports.com"
+        ],
+        "owner": "NBCUniversal"
+    },
+    "sportsillustrated.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.si.com"
+        ],
+        "owner": "Authentic Brands Group"
+    },
+    "yahoo.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-18",
+        "expires": "2027-01-18",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.yahoo.com"
+        ],
+        "owner": "Yahoo! Inc."
+    },
+    "bing.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.bing.com"
+        ],
+        "owner": "Microsoft Corporation"
+    },
+    "duckduckgo.com": {
+        "registrar": "NameCheap",
+        "created": "2008-01-20",
+        "expires": "2027-01-20",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.duckduckgo.com"
+        ],
+        "owner": "Duck Duck Go, Inc."
+    },
+    "baidu.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1999-10-11",
+        "expires": "2027-10-11",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.baidu.com"
+        ],
+        "owner": "Baidu, Inc."
+    },
+    "yandex.ru": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1997-09-23",
+        "expires": "2027-09-23",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.yandex.ru"
+        ],
+        "owner": "Yandex LLC"
+    },
+    "naver.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1997-12-12",
+        "expires": "2027-12-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.naver.com"
+        ],
+        "owner": "Naver Corp"
+    },
+    "daum.net": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.daum.net"
+        ],
+        "owner": "Kakao Corp"
+    },
+    "rakuten.co.jp": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1997-05-15",
+        "expires": "2027-05-15",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.rakuten.co.jp"
+        ],
+        "owner": "Rakuten Group, Inc."
+    },
+    "alibaba.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1999-04-15",
+        "expires": "2027-04-15",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.alibaba.com"
+        ],
+        "owner": "Alibaba Group Holding"
+    },
+    "aliexpress.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "2005-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.aliexpress.com"
+        ],
+        "owner": "Alibaba Group Holding"
+    },
+    "taobao.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "2003-04-21",
+        "expires": "2027-04-21",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.taobao.com"
+        ],
+        "owner": "Alibaba Group Holding"
+    },
+    "jd.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.jd.com"
+        ],
+        "owner": "JD.com, Inc."
+    },
+    "tencent.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1998-11-11",
+        "expires": "2027-11-11",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.tencent.com"
+        ],
+        "owner": "Tencent Holdings Ltd."
+    },
+    "huawei.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.huawei.com"
+        ],
+        "owner": "Huawei Technologies Co."
+    },
+    "samsung.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1994-01-12",
+        "expires": "2027-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.samsung.com"
+        ],
+        "owner": "Samsung Electronics"
+    },
+    "sony.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1991-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.sony.com"
+        ],
+        "owner": "Sony Group Corp"
+    },
+    "lg.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.lg.com"
+        ],
+        "owner": "LG Corp"
+    },
+    "panasonic.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.panasonic.com"
+        ],
+        "owner": "Panasonic Holdings"
+    },
+    "canon.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.canon.com"
+        ],
+        "owner": "Canon Inc."
+    },
+    "epson.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.epson.com"
+        ],
+        "owner": "Seiko Epson Corp"
+    },
+    "hp.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1986-03-03",
+        "expires": "2030-03-03",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.hp.com"
+        ],
+        "owner": "HP Inc."
+    },
+    "dell.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1988-11-22",
+        "expires": "2030-11-22",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.dell.com"
+        ],
+        "owner": "Dell Inc."
+    },
+    "lenovo.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.lenovo.com"
+        ],
+        "owner": "Lenovo Group Ltd."
+    },
+    "acer.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.acer.com"
+        ],
+        "owner": "Acer Inc."
+    },
+    "asus.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.asus.com"
+        ],
+        "owner": "ASUSTeK Computer Inc."
+    },
+    "intel.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1986-03-25",
+        "expires": "2030-03-25",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.intel.com"
+        ],
+        "owner": "Intel Corporation"
+    },
+    "amd.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.amd.com"
+        ],
+        "owner": "AMD Inc."
+    },
+    "nvidia.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.nvidia.com"
+        ],
+        "owner": "NVIDIA Corporation"
+    },
+    "oracle.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1986-12-02",
+        "expires": "2030-12-02",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.oracle.com"
+        ],
+        "owner": "Oracle Corporation"
+    },
+    "sap.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.sap.com"
+        ],
+        "owner": "SAP SE"
+    },
+    "salesforce.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1999-01-12",
+        "expires": "2028-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.salesforce.com"
+        ],
+        "owner": "Salesforce, Inc."
+    },
+    "adobe.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1986-11-17",
+        "expires": "2030-11-17",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.adobe.com"
+        ],
+        "owner": "Adobe Inc."
+    },
+    "autodesk.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1995-01-12",
+        "expires": "2027-01-12",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.autodesk.com"
+        ],
+        "owner": "Autodesk, Inc."
+    },
+    "cisco.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1987-05-14",
+        "expires": "2030-05-14",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.cisco.com"
+        ],
+        "owner": "Cisco Systems, Inc."
+    },
+    "ibm.com": {
+        "registrar": "MarkMonitor Inc.",
+        "created": "1986-03-19",
+        "expires": "2030-03-19",
+        "status": "Verified / Safe",
+        "nameservers": [
+            "ns1.ibm.com"
+        ],
+        "owner": "IBM Corporation"
+    }
+}

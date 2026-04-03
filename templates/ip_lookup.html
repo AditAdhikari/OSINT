@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IP Lookup | BreachCheck</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+            <i class="fas fa-shield-halved"></i> BREACHCHECK
+        </div>
+    <div class="nav-links">
+        <a href="{{ url_for('index') }}">Breach Scan</a>
+        <a href="/stats">Live Statistics</a>
+        <a href="{{ url_for('whois') }}">WHOIS</a>
+        <a href="/password-check">Strength Checker</a>
+        <a href="{{ url_for('ip_lookup') }}" style="color: var(--accent-blue);">IP Lookup</a>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Domain → IP Lookup</h1>
+    <p>Resolve domain names into IP addresses.</p>
+
+    <form class="search-box" method="POST">
+        <input type="text" name="domain" placeholder="Enter domain (e.g., google.com)" value="{{ domain }}" required>
+        <button type="submit">Resolve</button>
+    </form>
+</section>
+
+<div class="container">
+
+{% if domain %}
+
+    {% if ips %}
+        <h2 class="section-title">
+            Results for: <span style="color: var(--accent-blue);">{{ domain }}</span>
+        </h2>
+
+        <div class="card">
+            <h3><i class="fas fa-network-wired"></i> IP Addresses</h3>
+
+            <div style="margin-top: 15px;">
+                {% for ip in ips %}
+                    <span class="badge">{{ ip }}</span>
+                {% endfor %}
+            </div>
+        </div>
+
+    {% else %}
+        <div class="alert">
+            <i class="fas fa-circle-exclamation"></i>
+            {{ error }}
+        </div>
+    {% endif %}
+
+{% endif %}
+ 
+
+<div style="text-align: center; margin-top: 3rem;">
+    <a href="{{ url_for('index') }}" class="back-btn">
+        <i class="fas fa-arrow-left"></i> Back to Home
+    </a>
+</div>
+
+</div>
+
+</body>
+</html>

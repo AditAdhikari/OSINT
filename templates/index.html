@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Breach Checker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">
+            <i class="fas fa-shield-halved"></i> BREACHCHECK
+        </div>
+    <div class="nav-links">
+        <a href="/">Breach Scan</a>
+        <a href="/whois">WHOIS Lookup</a>
+        <a href="/stats">Live Statistics</a>
+        <a href="/password-check">Strength Checker</a>
+        <a href="{{ url_for('ip_lookup') }}">IP Lookup</a>
+        
+        {% if session.get('user') %}
+            <span style="color: var(--accent-blue); margin-left: 1.5rem;">👤 {{ session['user'] }}</span>
+            <a href="/logout" style="color: var(--danger);">Logout</a>
+        {% else %}
+            <a href="/login">Login</a>
+        {% endif %}
+    </div>
+</nav>
+<!-- HERO SECTION -->
+<section class="hero">
+    <h1>Check if your email has been compromised</h1>
+    <p>Search across thousands of breached records securely.</p>
+
+    <form method="POST" class="search-box">
+        <input type="email" name="email" placeholder="Enter email address..." required>
+        <button type="submit">Check</button>
+    </form>
+</section>
+
+<!-- RESULT SECTION -->
+<div class="container">
+
+    {% if risk %}
+        <div class="alert">
+            {{ risk }}
+        </div>
+    {% endif %}
+
+    {% if error %}
+        <div class="safe-box">
+            {{ error }}
+        </div>
+    {% endif %}
+
+    {% if result %}
+        <h2 class="section-title">Breaches Found</h2>
+
+        <div class="grid">
+            {% for item in result %}
+                <div class="card">
+                    <h3>{{ item.name }}</h3>
+
+                    <p><b>Date:</b> {{ item.date }}</p>
+                    <p><b>Type:</b> {{ item.type }}</p>
+
+                    <p><b>Severity:</b> 
+                        <span class="badge 
+                        {% if item.severity >= 7 %}high
+                        {% elif item.severity >= 4 %}medium
+                        {% else %}low{% endif %}">
+                        {{ item.severity }}
+                        </span>
+                    </p>
+
+                    <p>
+                        {% if item.passwordIncluded %}
+                            <span class="danger">🔴 Password Exposed</span>
+                        {% else %}
+                            <span class="safe">🟢 No Password Leak</span>
+                        {% endif %}
+                    </p>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <div class="container" id="tips">
+    <h2 class="section-title">What to do if you're breached?</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>1. Change Passwords</h3>
+            <p>Immediately update the password for the affected service and any other accounts where you reuse the same password.</p>
+        </div>
+        <div class="card">
+            <h3>2. Enable 2FA</h3>
+            <p>Two-factor authentication (like Google Authenticator or hardware keys) is the best way to prevent someone from accessing your accounts even if they have your password.</p>
+        </div>
+        <div class="card">
+            <h3>3. Use a Password Manager</h3>
+            <p>Stop reusing passwords. Use a tool like Bitwarden or KeepassXC (popular in Kali Linux) to store unique, strong passwords for every site.</p>
+        </div>
+    </div>
+</div>
+
+</div>
+
+</body>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHOIS Intelligence | BreachCheck</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-shield-halved"></i> BREACHCHECK
+        </div>
+        <div class="nav-links">
+            <a href="{{ url_for('index') }}">Breach Scan</a>
+            <a href="/stats">Live Statistics</a>
+            <a href="{{ url_for('whois') }}" style="color: var(--accent-blue);">WHOIS</a>
+            <a href="/password-check">Strength Checker</a>
+            <a href="{{ url_for('ip_lookup') }}">IP Lookup</a>
+            <a href="{{ url_for('logout') }}">Logout</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>WHOIS Intelligence</h1>
+        <p>Identify domain owners and registration metadata from our secure registry.</p>
+        
+        <form class="search-box" method="POST">
+            <input type="text" name="domain" placeholder="Enter domain (e.g., google.com)" value="{{ domain }}" required>
+            <button type="submit">Analyze</button>
+        </form>
+    </section>
+
+    <div class="container">
+        {% if domain %}
+            
+            {% if result %}
+                <h2 class="section-title">Analysis for: <span style="color: var(--accent-blue);">{{ domain }}</span></h2>
+                
+                <div style="margin-bottom: 2rem;">
+                    {% if '⚠️' in result.status %}
+                        <div class="alert">
+                            <i class="fas fa-triangle-exclamation"></i> Security Warning: {{ result.status }}
+                        </div>
+                    {% else %}
+                        <div class="safe-box">
+                            <i class="fas fa-check-circle"></i> Status: {{ result.status }}
+                        </div>
+                    {% endif %}
+                </div>
+
+                <div class="grid">
+                    <div class="card">
+                        <h3><i class="fas fa-id-card"></i> Registrar</h3>
+                        <p>{{ result.registrar }}</p>
+                    </div>
+                    <div class="card">
+                        <h3><i class="fas fa-building"></i> Organization</h3>
+                        <p>{{ result.owner }}</p>
+                    </div>
+                    <div class="card">
+                        <h3><i class="fas fa-calendar-plus"></i> Registered</h3>
+                        <p>{{ result.created }}</p>
+                    </div>
+                    <div class="card">
+                        <h3><i class="fas fa-calendar-xmark"></i> Expiry</h3>
+                        <p>{{ result.expires }}</p>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h3><i class="fas fa-server"></i> Nameservers</h3>
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px;">
+                        {% for ns in result.nameservers %}
+                            <span class="badge low">> {{ ns }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+
+            {% else %}
+                <div class="alert">
+                    <i class="fas fa-circle-exclamation"></i> 
+                    No records found for "<strong>{{ domain }}</strong>" in our offline database.
+                </div>
+            {% endif %}
+
+        {% endif %}
+        
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="{{ url_for('index') }}" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Breach Scan
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

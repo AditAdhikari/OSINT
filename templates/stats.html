@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Statistics | BreachCheck</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+            <i class="fas fa-shield-halved"></i> BREACHCHECK
+        </div>
+    <div class="nav-links">
+        <a href="/">Breach Scan</a>
+        <a href="/stats">Live Statistics</a>
+        <a href="/whois">WHOIS Lookup</a>
+        <a href="/password-check">Strength Checker</a>
+        <a href="{{ url_for('ip_lookup') }}">IP Lookup</a>
+        
+        {% if session.get('user') %}
+            <span style="color: var(--accent-blue); margin-left: 1.5rem;">👤 {{ session['user'] }}</span>
+            <a href="/logout" style="color: var(--danger);">Logout</a>
+        {% else %}
+            <a href="/login">Login</a>
+        {% endif %}
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Database Insights</h1>
+    <p>Real-time analytics of our threat intelligence database.</p>
+</section>
+
+<div class="container">
+    <div class="grid">
+        <div class="card stat-card">
+            <h3>{{ stats.total_records }}</h3>
+            <p>Total Records</p>
+        </div>
+        <div class="card stat-card">
+            <h3>{{ stats.unique_emails }}</h3>
+            <p>Unique Emails</p>
+        </div>
+        <div class="card stat-card">
+            <h3 style="color: var(--danger);">{{ stats.high_severity }}</h3>
+            <p>Critical Threats</p>
+        </div>
+        <div class="card stat-card">
+            <h3 style="color: var(--warning);">{{ stats.password_leaks }}</h3>
+            <p>Password Leaks</p>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 3rem;">
+        <a href="/" class="back-btn">← Back to Search</a>
+    </div>
+</div>
+
+</body>
+</html>

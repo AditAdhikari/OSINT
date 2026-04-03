@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register | BreachCheck</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <h2>Secure Registration</h2>
+            <p>Set up your encrypted access profile.</p>
+
+            <form method="POST" class="auth-form">
+                <div class="form-group">
+                    <label>CHOOSE USERNAME</label>
+                    <input type="text" name="username" class="auth-input" placeholder="e.g., cyber_analyst" required>
+                </div>
+                <div class="form-group">
+                    <label>CREATE PASSWORD</label>
+                    <input type="password" name="password" class="auth-input" placeholder="Create a strong password" required>
+                </div>
+                <button type="submit" class="auth-btn">GENERATE ACCOUNT</button>
+            </form>
+
+            <div class="auth-footer">
+                Already have access? <a href="/login">Log In</a>
+            </div>
+        </div>
+
+        <div class="auth-info-panel">
+            <h3>🛡️ Password Pro-Tips</h3>
+            <p>A strong password is your first line of defense against brute-force attacks.</p>
+            <div class="tip-box">
+                <strong>Length Matters:</strong> 12+ characters are significantly harder to crack than 8.
+            </div>
+            <div class="tip-box">
+                <strong>Avoid Patterns:</strong> Don't use "12345" or common words like "Password".
+            </div>
+            <div class="tip-box">
+                <strong>Entropy:</strong> Mix numbers, symbols, and mixed-case letters to increase complexity.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
