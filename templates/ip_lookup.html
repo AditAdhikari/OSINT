@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IP Lookup | BreachCheck</title>
 
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
@@ -15,15 +16,25 @@
 
 <nav class="navbar">
     <div class="logo">
-            <i class="fas fa-shield-halved"></i> BREACHCHECK
-        </div>
-    <div class="nav-links">
-        <a href="{{ url_for('index') }}">Breach Scan</a>
-        <a href="/stats">Live Statistics</a>
-        <a href="{{ url_for('whois') }}">WHOIS</a>
-        <a href="/password-check">Strength Checker</a>
-        <a href="{{ url_for('ip_lookup') }}" style="color: var(--accent-blue);">IP Lookup</a>
-        <a href="{{ url_for('logout') }}">Logout</a>
+        <i class="fas fa-shield-halved"></i> BREACHCHECK
+    </div>
+
+    <!-- 🍔 Mobile Button -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="/">Breach Scan</a>
+        <a href="/whois">WHOIS</a>
+        <a href="/stats">Stats</a>
+        <a href="/password-check">Password</a>
+        <a href="{{ url_for('ip_lookup') }}">IP</a>
+
+        {% if session.get('user') %}
+            <span class="user">👤 {{ session['user'] }}</span>
+            <a href="/logout" class="logout">Logout</a>
+        {% else %}
+            <a href="/login">Login</a>
+        {% endif %}
     </div>
 </nav>
 
@@ -75,4 +86,9 @@
 </div>
 
 </body>
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+}
+</script>
 </html>
