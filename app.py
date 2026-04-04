@@ -1,198 +1,171 @@
 import os
-import socket
 import json
-import requests
+import socket
 from flask import Flask, render_template, request, redirect, url_for, session, flash
 from functools import wraps
 
-# Custom modules
 from stats_utils import get_live_stats
 from password_checker import check_password_strength
 from auth_handler import register_user, login_user
 
 app = Flask(__name__)
-app.secret_key = os.environ.get("SECRET_KEY", "dev_key")
+app.secret_key = "cyber_security_secret_key"
 
-# Base directory
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# File paths
 DATA_PATH = os.path.join(BASE_DIR, 'data', 'breaches.json')
 WHOIS_PATH = os.path.join(BASE_DIR, 'data', 'whois_registry.json')
 
-# Load breach data safely
-try:
-    email_index, stats_data = get_live_stats(DATA_PATH)
-except Exception as e:
-    print("Error loading breach data:", e)
-    email_index, stats_data = {}, {}
+# Load data safely
+email_index, stats_data = get_live_stats(DATA_PATH)
 
-# =========================
-# LOGIN REQUIRED DECORATOR
-# =========================
+# 🔐 LOGIN REQUIRED
 def login_required(f):
     @wraps(f)
-    def wrapper(*args, **kwargs):
+    def decorated_function(*args, **kwargs):
         if 'user' not in session:
+            flash("🔒 Please login first.", "danger")
             return redirect(url_for('login'))
         return f(*args, **kwargs)
-    return wrapper
+    return decorated_function
 
-# =========================
-# ROUTES
-# =========================
 
-@app.route('/')
+# 🏠 HOME
+@app.route("/", methods=["GET", "POST"])
+@login_required
 def index():
-    return render_template('index.html')
+    result, error, risk = [], None, None
 
+    if request.method == "POST":
+        email = (request.form.get("email") or "").lower().strip()
+        result = email_index.get(email, [])
 
-# =========================
-# AUTH
-# =========================
-
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    if request.method == 'POST':
-        user = login_user(request.form['email'], request.form['password'])
-        if user:
-            session['user'] = user
-            return redirect(url_for('index'))
+        if result:
+            avg = sum([r.get("severity", 0) for r in result]) / len(result)
+            if avg >= 8:
+                risk = "🔴 CRITICAL"
+            elif avg >= 5:
+                risk = "🟠 MEDIUM"
+            else:
+                risk = "🟢 LOW"
         else:
-            flash("Invalid credentials")
-    return render_template('login.html')
+            error = "✅ No breaches found."
+
+    return render_template("index.html", result=result, error=error, risk=risk)
 
 
-@app.route('/register', methods=['GET', 'POST'])
-def register():
-    if request.method == 'POST':
-        success = register_user(request.form['email'], request.form['password'])
-        if success:
-            flash("Registered successfully. Please login.")
-            return redirect(url_for('login'))
-        else:
-            flash("User already exists")
-    return render_template('register.html')
-
-
-@app.route('/logout')
-def logout():
-    session.clear()
-    return redirect(url_for('login'))
-
-
-# =========================
-# EMAIL BREACH CHECK
-# =========================
-
-@app.route('/check', methods=['POST'])
+# 📊 STATS
+@app.route("/stats")
 @login_required
-def check_email():
-    email = request.form['email'].lower()
-
-    breaches = email_index.get(email, [])
-
-    return render_template(
-        'index.html',
-        email=email,
-        breaches=breaches,
-        found=bool(breaches)
-    )
+def stats_page():
+    _, latest_stats = get_live_stats(DATA_PATH)
+    return render_template("stats.html", stats=latest_stats)
 
 
-# =========================
-# PASSWORD CHECK
-# =========================
-
-@app.route('/password', methods=['GET', 'POST'])
+# 🔑 PASSWORD CHECK
+@app.route("/password-check", methods=["GET", "POST"])
 @login_required
-def password():
-    result = None
+def password_page():
+    strength = None
 
-    if request.method == 'POST':
-        pwd = request.form['password']
-        result = check_password_strength(pwd)
+    if request.method == "POST":
+        password = request.form.get("password")
+        if password:
+            strength = check_password_strength(password)
 
-    return render_template('password_check.html', result=result)
+    return render_template("password_check.html", strength=strength)
 
 
-# =========================
-# WHOIS LOOKUP
-# =========================
-
+# 🌐 WHOIS
 @app.route('/whois', methods=['GET', 'POST'])
 @login_required
 def whois():
     result = None
+    domain_query = ""
 
     if request.method == 'POST':
-        domain = request.form['domain'].lower()
+        domain_query = request.form.get('domain', '').strip().lower()
+        domain_query = domain_query.replace("https://", "").replace("http://", "")
+        domain_query = domain_query.replace("www.", "")
+        domain_query = domain_query.split("/")[0]
 
         try:
-            with open(WHOIS_PATH, 'r') as f:
-                data = json.load(f)
+            if os.path.exists(WHOIS_PATH):
+                with open(WHOIS_PATH, 'r', encoding='utf-8') as f:
+                    db = json.load(f)
 
-            result = data.get(domain, {"error": "Domain not found"})
+                for key in db:
+                    if key.strip().lower() == domain_query:
+                        result = db[key]
+                        break
+            else:
+                flash("❌ WHOIS database not found", "danger")
+
         except Exception as e:
-            result = {"error": str(e)}
+            flash(f"❌ Error: {str(e)}", "danger")
 
-    return render_template('whois.html', result=result)
+    return render_template('whois.html', result=result, domain=domain_query)
 
 
-# =========================
-# DOMAIN → IP + IP INFO
-# =========================
-
-@app.route('/ip', methods=['GET', 'POST'])
+# 🌍 IP LOOKUP (FIXED)
+@app.route('/ip-lookup', methods=['GET', 'POST'])
 @login_required
 def ip_lookup():
-    results = []
+    ips = []
+    error = None
+    domain = ""
 
-    if request.method == 'POST':
-        domain = request.form['domain']
+    if request.method == "POST":
+        domain = request.form.get("domain", "").strip()
 
         try:
-            ip = socket.gethostbyname(domain)
+            _, _, ipaddrlist = socket.gethostbyname_ex(domain)
+            ips = ipaddrlist
+        except Exception:
+            error = "❌ Could not resolve domain."
 
-            # Get IP info
-            try:
-                res = requests.get(f"http://ip-api.com/json/{ip}").json()
-                country = res.get("country", "Unknown")
-                isp = res.get("isp", "Unknown")
-            except:
-                country = "Unknown"
-                isp = "Unknown"
-
-            results.append({
-                "domain": domain,
-                "ip": ip,
-                "country": country,
-                "isp": isp
-            })
-
-        except Exception as e:
-            results.append({
-                "domain": domain,
-                "error": str(e)
-            })
-
-    return render_template('ip_lookup.html', results=results)
+    return render_template("ip_lookup.html", ips=ips, error=error, domain=domain)
 
 
-# =========================
-# STATS
-# =========================
+# 👤 REGISTER
+@app.route("/register", methods=["GET", "POST"])
+def register():
+    if 'user' in session:
+        return redirect(url_for('index'))
 
-@app.route('/stats')
-@login_required
-def stats():
-    return render_template('stats.html', stats=stats_data)
+    if request.method == "POST":
+        success, msg = register_user(request.form['username'], request.form['password'])
+        flash(msg)
+        if success:
+            return redirect(url_for("login"))
+
+    return render_template("register.html")
 
 
-# =========================
-# RUN
-# =========================
+# 🔐 LOGIN
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if 'user' in session:
+        return redirect(url_for('index'))
+
+    if request.method == "POST":
+        success, msg = login_user(request.form['username'], request.form['password'])
+        if success:
+            session['user'] = request.form['username']
+            return redirect(url_for('index'))
+
+        flash(msg, "danger")
+
+    return render_template("login.html")
+
+
+# 🚪 LOGOUT
+@app.route("/logout")
+def logout():
+    session.pop('user', None)
+    flash("Logged out successfully.")
+    return redirect(url_for('login'))
+
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
+    app.run(debug=True)

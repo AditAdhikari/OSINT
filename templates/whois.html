@@ -31,7 +31,7 @@
         <h1>WHOIS Intelligence</h1>
         <p>Identify domain owners and registration metadata from our secure registry.</p>
         
-        <form class="search-box" method="POST">
+        <form class="search-box" method="POST" action="{{ url_for('whois') }}">
             <input type="text" name="domain" placeholder="Enter domain (e.g., google.com)" value="{{ domain }}" required>
             <button type="submit">Analyze</button>
         </form>

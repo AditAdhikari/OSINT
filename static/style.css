@@ -1,52 +1,42 @@
-/* =========================
-   GLOBAL VARIABLES
-========================= */
-:root {
-    --bg-dark: #020617;
-    --bg-card: #0b1220;
-    --border: #1e293b;
-    --text-primary: #e2e8f0;
-    --text-secondary: #94a3b8;
-
-    --accent-blue: #38bdf8;
-    --accent-blue-dark: #2563eb;
-
-    --danger: #ef4444;
-    --warning: #f59e0b;
-    --success: #22c55e;
-}
-
-/* =========================
-   BASE
-========================= */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* VARIABLES */
+:root {
+    --bg-dark: #0d1117;
+    --card-bg: #161b22;
+    --accent-blue: #58a6ff;
+    --text-primary: #c9d1d9;
+    --text-secondary: #8b949e;
+    --danger: #ff4d4f;
+    --warning: #f39c12;
+    --success: #2ecc71;
+}
+
+/* BODY */
 body {
     font-family: 'Inter', sans-serif;
-    background: radial-gradient(circle at top, #020617, #000);
+    background: var(--bg-dark);
     color: var(--text-primary);
 }
 
-/* =========================
-   NAVBAR
-========================= */
+/* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
-    background: rgba(2,6,23,0.9);
-    border-bottom: 1px solid var(--border);
-    backdrop-filter: blur(10px);
+    padding: 15px 30px;
+    background: #010409;
+    border-bottom: 1px solid #21262d;
 }
 
 .logo {
-    font-size: 1.2rem;
     font-weight: 700;
+    font-size: 1.2rem;
     color: var(--accent-blue);
 }
 
@@ -54,7 +44,6 @@ body {
     margin-left: 20px;
     text-decoration: none;
     color: var(--text-secondary);
-    font-weight: 500;
     transition: 0.3s;
 }
 
@@ -62,258 +51,284 @@ body {
     color: var(--accent-blue);
 }
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 .hero {
     text-align: center;
     padding: 60px 20px;
 }
 
 .hero h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
 .hero p {
     color: var(--text-secondary);
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
-/* =========================
-   SEARCH BOX
-========================= */
+/* SEARCH BOX */
 .search-box {
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .search-box input {
-    padding: 14px;
-    width: 320px;
-    border-radius: 10px;
-    border: 1px solid var(--border);
-    background: #020617;
+    padding: 12px;
+    width: 300px;
+    border-radius: 6px;
+    border: none;
+    background: #21262d;
     color: white;
 }
 
 .search-box button {
-    padding: 14px 20px;
-    border-radius: 10px;
+    padding: 12px 20px;
     border: none;
-    background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-dark));
-    color: white;
+    border-radius: 6px;
+    background: var(--accent-blue);
+    color: black;
     cursor: pointer;
-    margin-left: 10px;
-    transition: 0.3s;
 }
 
-.search-box button:hover {
-    opacity: 0.85;
-}
-
-/* =========================
-   CONTAINER
-========================= */
+/* CONTAINER */
 .container {
+    width: 90%;
     max-width: 1100px;
     margin: auto;
-    padding: 20px;
+    margin-top: 30px;
 }
 
-/* =========================
-   GRID
-========================= */
+/* GRID */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
-/* =========================
-   CARDS
-========================= */
+/* CARD */
 .card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 14px;
+    background: var(--card-bg);
     padding: 20px;
-    transition: 0.3s;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    border: 1px solid #30363d;
 }
 
-.card:hover {
-    transform: translateY(-5px);
+/* SECTION TITLE */
+.section-title {
+    margin-bottom: 20px;
 }
 
-.card h3 {
-    margin-bottom: 10px;
-    color: var(--accent-blue);
-}
-
-/* =========================
-   BADGES
-========================= */
+/* BADGES */
 .badge {
-    display: inline-block;
-    padding: 8px 12px;
-    border-radius: 999px;
-    font-size: 0.8rem;
-    margin: 5px;
-    border: 1px solid var(--border);
-}
-
-.badge.low {
-    background: rgba(34,197,94,0.1);
-    color: var(--success);
-}
-
-.badge.medium {
-    background: rgba(245,158,11,0.1);
-    color: var(--warning);
+    padding: 5px 10px;
+    border-radius: 6px;
+    background: #21262d;
+    font-size: 0.9rem;
 }
 
 .badge.high {
-    background: rgba(239,68,68,0.1);
-    color: var(--danger);
+    background: var(--danger);
 }
 
-/* =========================
-   ALERTS
-========================= */
+.badge.medium {
+    background: var(--warning);
+}
+
+.badge.low {
+    background: var(--success);
+}
+
+/* ALERT */
 .alert {
+    background: rgba(255, 77, 79, 0.1);
     padding: 15px;
-    border-radius: 10px;
-    background: rgba(239,68,68,0.1);
-    border: 1px solid var(--danger);
-    margin-top: 20px;
+    border-left: 4px solid var(--danger);
+    margin-bottom: 20px;
 }
 
+/* SAFE BOX */
 .safe-box {
+    background: rgba(46, 204, 113, 0.1);
     padding: 15px;
-    border-radius: 10px;
-    background: rgba(34,197,94,0.1);
-    border: 1px solid var(--success);
-    margin-top: 20px;
+    border-left: 4px solid var(--success);
+    margin-bottom: 20px;
 }
 
-/* =========================
-   TEXT COLORS
-========================= */
-.danger {
-    color: var(--danger);
-}
-
-.safe {
-    color: var(--success);
-}
-
-/* =========================
-   TITLES
-========================= */
-.section-title {
-    margin: 30px 0 15px;
-    font-size: 1.5rem;
-}
-
-/* =========================
-   BUTTON
-========================= */
+/* BUTTON */
 .back-btn {
-    display: inline-block;
-    padding: 10px 18px;
-    border-radius: 8px;
-    background: #1e293b;
-    color: white;
+    padding: 10px 20px;
+    background: var(--accent-blue);
+    color: black;
     text-decoration: none;
-    margin-top: 20px;
+    border-radius: 6px;
 }
 
-.back-btn:hover {
-    background: var(--accent-blue-dark);
-}
+/* ================= AUTH PAGES (UPGRADED) ================= */
 
-/* =========================
-   AUTH (LOGIN / REGISTER)
-========================= */
 .auth-container {
     display: flex;
     min-height: 100vh;
 }
 
+/* LEFT PANEL (MODERN LOOK) */
+.auth-info-panel {
+    flex: 1;
+    background: linear-gradient(135deg, #0d1117, #161b22);
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid #21262d;
+}
+
+.auth-info-panel h3 {
+    margin-bottom: 20px;
+    color: var(--accent-blue);
+    font-size: 1.8rem;
+}
+
+.auth-info-panel p {
+    margin-bottom: 20px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.info-list {
+    margin-top: 20px;
+}
+
+.info-list li {
+    margin-bottom: 12px;
+    color: var(--text-secondary);
+}
+
+/* RIGHT CARD (GLASS EFFECT) */
 .auth-card {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 60px;
-    background: #020617;
+    background: radial-gradient(circle at top, #161b22, #0d1117);
 }
 
 .auth-card h2 {
     margin-bottom: 10px;
-}
-
-.auth-input {
-    width: 100%;
-    padding: 12px;
-    margin-top: 8px;
-    border-radius: 8px;
-    border: 1px solid var(--border);
-    background: #0b1220;
-    color: white;
-}
-
-.auth-btn {
-    margin-top: 20px;
-    width: 100%;
-    padding: 12px;
-    border-radius: 8px;
-    border: none;
-    background: var(--accent-blue);
-    color: white;
-    cursor: pointer;
-}
-
-.auth-info-panel {
-    flex: 1;
-    background: #0b1220;
-    padding: 60px;
-}
-
-.info-list li {
-    margin: 10px 0;
-}
-
-.tip-box {
-    background: #020617;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 8px;
-}
-
-/* =========================
-   STATS CARD
-========================= */
-.stat-card {
-    text-align: center;
-}
-
-.stat-card h3 {
     font-size: 2rem;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
-@media(max-width: 768px) {
+.auth-card p {
+    margin-bottom: 25px;
+    color: var(--text-secondary);
+}
+
+/* FORM */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* INPUT (GLOW EFFECT) */
+.auth-input {
+    width: 100%;
+    padding: 12px;
+    background: #21262d;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    color: white;
+    transition: 0.3s;
+}
+
+.auth-input:focus {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 10px rgba(88, 166, 255, 0.4);
+    outline: none;
+}
+
+/* BUTTON (MODERN HOVER) */
+.auth-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #58a6ff, #1f6feb);
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.auth-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(88, 166, 255, 0.5);
+}
+
+/* FOOTER */
+.auth-footer {
+    margin-top: 20px;
+    color: var(--text-secondary);
+}
+
+.auth-footer a {
+    color: var(--accent-blue);
+    text-decoration: none;
+}
+
+/* FLASH */
+.flash-msg {
+    background: rgba(255, 77, 79, 0.15);
+    color: var(--danger);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border-left: 3px solid var(--danger);
+}
+
+/* REGISTER EXTRA TIP BOX */
+.tip-box {
+    background: #161b22;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+    border-left: 3px solid var(--accent-blue);
+    color: var(--text-secondary);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
     .auth-container {
+        flex-direction: column;
+    }
+
+    .auth-info-panel {
+        display: none;
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .auth-container {
+        flex-direction: column;
+    }
+
+    .search-box {
         flex-direction: column;
     }
 
     .search-box input {
         width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .search-box button {
-        width: 100%;
-        margin-left: 0;
     }
 }
