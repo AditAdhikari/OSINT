@@ -1,5 +1,4 @@
 Flask
 requests
 reportlab
-socket 
 gunicorn
